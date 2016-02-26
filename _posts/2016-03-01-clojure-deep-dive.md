@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Chapter >strike out 01 < 03 Clojure Deep Dive
+title: Clojure Deep Dive
 ---
 
-#What we'll cover
+### Welcome to Clojure for the Brave and True - Chapter 03
+
+### What we'll cover more or less
 
 The Humble List
 > ()
