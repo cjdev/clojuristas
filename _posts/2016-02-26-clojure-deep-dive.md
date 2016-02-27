@@ -43,19 +43,33 @@ Thats it. No Precedence. No AST. *You* build the AST.
 
 The consequences of this are enourmous: the lines of code and data suddenly become blurred. It means `code` can be manipulated as `data` at compile or runtime. 
 
+Lets try it out
 
+{% highlight clojure %}
 
-### Forms and 
-Expression evaluation
-  Data structures evaluate to themselves
-  Lists are special in that they evaluate/reduce to a value
-    Function then Args
-    Function appled to Args
-    Eval / Apply
-  Other kinds of Lists Generally called Forms or even Special Forms 
-    are "these kinds of lists"
-    What is a Form -> definition
-    How do we use lists as a data structure ? - surpress execution
+;; fire up the repl and type some values 
+;; now lets create a vector
+;; now a list ... what happend?
+;;  suppress the list evaluation with a tick  '
+{% endhighlight %}
+
+### Forms and [Special Forms](http://clojure.org/reference/special_forms)
+
+- Every LISP has a basic set of *primitives* that defines the language 
+- We'll introduce a subset of these 
+-- the quoted form
+-- if
+-- do 
+-- let
+-- def
+-- fn
+-- defn
+-- there are others : var, loop, recur, try , throw - we will get to these later.
+
+- Lets try each of the above
+
+- For a list let's do it wrong then correctly 
+-- You'll see a lot of these in the beginning
 
 Expressions
   function followed by arguments -
@@ -68,11 +82,6 @@ Expressions
 
 Forms/Special Forms
 
-def
-fn
-defn
-let
-if
 where
 
 data 'types'
@@ -120,5 +129,5 @@ user => (doc doc)
 ;
 {% endhighlight %}
 
-Try [clojure-docs online](http://clojure-doc.com)
+Try [clojure-docs online](https://clojuredocs.org)
 
