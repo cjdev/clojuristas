@@ -55,15 +55,24 @@ Lets try it out
 
 ### Forms and [Special Forms](http://clojure.org/reference/special_forms)
 
-- Every LISP has a basic set of *primitives* that defines the language 
+What is a Form?
+
+A LISP  form is a LISP datum that is also a program, that is, it can be evaluated without an error.
+ \-- robbed from StackOverflow which is good enough I guess...
+
+
+- Every LISP has a basic set of *primitives* that defines the language.
+These are called "Special Forms". Unlike regular forms a programmer does not define or manipulate the datum like regular forms. Instead they are defined and provided by the language itself.
+
+
 - We'll introduce a subset of these 
--- the quoted form
+-- quote
 -- if
 -- do 
 -- let
 -- def
 -- fn
--- defn
+-- defn (def + fn)
 -- there are others : var, loop, recur, try , throw - we will get to these later.
 
 - Lets try each of the above
@@ -80,18 +89,15 @@ Expressions
   watch me alter a list  (eval (cons / (drop 1 '(+ 1 2 3))))
   eval one then the other 
 
-Forms/Special Forms
+Basic Data Structures.
 
-where
-
-data 'types'
 list
 vector - unlike list in that access in constant time and wont be mistaken for "code"
 hash-map
 set
 
 
-Basic functions
+A few Basic functions 
 
 inc / dec 
 str
@@ -105,11 +111,6 @@ conj
 nil?
 true?
 false?
-
-
-
-
-
 
 
 
